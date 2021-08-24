@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="viewport" content ="with=device-width, initial-scale=1.0">
+    <title>Steven Mu</title>
+    <link rel ="stylesheet" href ="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Images/favicon.png">
+    <link rel ="stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class ="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="index.html">PROJECTS</a></li> <!--remember to change this back to project-->
+                        <li><a href="#aboutsection">ABOUT ME</a></li>
+                        <li><a href="mailto:xsmu0922@gmail.com">CONTACT</a></li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>Steven Mu</h1>
+        <p id="one">Student, Athlete</p>
+        <p id="two">Hardware Designer, Software Developer</p>
+        <a href ="#aboutsection" class="hero-btn">About Me</a>
+    </div>
+
+    </section>
+
+    <!--------JS for mobile menu--------->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+
+    </script>
+    <!------My Projects------>
+
+    <section class="projects" id="projectsection">
+        <h1>My Projects</h1>
+        <p>Here are some of the projects that I'm most proud of.</p>
+        <p2>(Section Work In Progress)</p2>
+
+        <div class="row">
+            <a href="https://drive.google.com/drive/folders/1nY6uOClhC3xW3xLyTqIPX61fH-7Hkaav?usp=sharing" class="project-col">
+                <h3>Automatic Sumo Bot</h3>
+                <p>Line-Detection, Bot-Detection, etc</p>
+                <img src="Images/sumopic.JPG">
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=cD_g0Y-2klY&ab_channel=StevenMu" target="_blank" class="project-col">
+                <h3>Arduino Arcade Game</h3>
+                <p>Bluetooth & Custom Android App</p>
+                <img src="Images/cyclonepic.jpg">
+            </a>
+
+            <a href="https://www.youtube.com/watch?v=kwXs1PVdfvE&ab_channel=StevenMu" target="_blank" class="project-col">
+                <h3>Remedy</h3>
+                <p>Medication Dispenser</p>
+                <img src="Images/remedy.jpg">
+            </a>
+        </div>
+
+    </section>
+
+    <!-----About me----->
+
+    <section class="about" id="aboutsection"> 
+        <h2>About Me</h2>
+        <img src="Images/headshot.jpg" class="floatLeft">
+        <p id="one">Hello, my name is Steven. I am heading into my senior year of high school this fall at Sir John A. Macdonald Secondary School in Waterloo, Ontario, Canada. </p>
+        <p id="two">Throughout my life, I’ve always had a passion towards innovation and helping people with the power of technology, and this started early when my mother got me an Arduino in the 8th grade. Ever since then, I’ve worked on numerous projects involving both computer software and hardware. I can work with python, C++, html/css as well as the arduino language.</p>
+        <p id="three">In my spare time, I am a competitive track and field athlete specializing in the jumps. Besides that, I also played volleyball and swam for my high school. I’m also part of multiple clubs at SJAM including the Hack Club, in which I am the head robotics executive. If you would like to contact me, please click on the button below!</p>
+        <a href="mailto:xsmu0922@gmail.com" class="hero-btn2">Contact By Email</a>
+    </section>
+
+    <section class="socials">
+        <div class='icons'>
+            <a href= "https://github.com/steven-mu12" target = "_blank" class ="mediabtn"><i class='fa fa-github-square fa-3x'></i></a>
+            <a href= "https://www.linkedin.com/in/steven-mu-1b18931ba/" target = "_blank" class ="mediabtn"><i class='fa fa-linkedin-square fa-3x'></i></a>
+            <a href= "https://www.youtube.com/channel/UCn97Vx-VfeXK8ox3OWPeWWQ" target = "_blank" class ="mediabtn"><i class='fa fa-youtube-square fa-3x'></i></a> 
+            <a href= "https://www.instagram.com/steven.mu.12/" target = "_blank" class ="mediabtn"><i class='fa fa-instagram fa-3x'></i></a>
+        </div>
+    </section>
+
+    <!-----Footer------>
+    <section class="footer">
+        <p>Copyright © Steven Mu 2021</p>
+    </section>
+</body>
+
+</html>
