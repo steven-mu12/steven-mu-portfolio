@@ -1,0 +1,48 @@
+<!DOCTYPE html><html>
+    <head>
+        <meta name ="viewport" content ="with=device-width, initial-scale=1.0">
+        <title>Steven Mu</title>
+        <link rel ="stylesheet" href ="projectstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="Images/favicon.png">
+        <link rel ="stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <section class="header">
+            <nav>
+                <div class ="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="projects.html">PROJECTS</a></li> <!--remember to change this back to project-->
+                            <li><a href="#aboutsection">ABOUT ME</a></li>
+                            <li><a href="mailto:xsmu0922@gmail.com">CONTACT</a></li>
+                        </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+    
+        <div class="text-box">
+            <h1>My Projects</h1>
+            <p id="one">Here are some of my projects.</p>
+            <p id="two">(Page work in progress)</p>
+        </div>
+    
+        </section>
+    
+        <!--------JS for mobile menu--------->
+    
+        <script>
+            var navLinks = document.getElementById("navLinks");
+    
+            function showMenu(){
+                navLinks.style.right = "0"
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+    
+        </script>
