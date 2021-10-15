@@ -156,8 +156,8 @@ nav .fa{
     text-decoration: none;
 }
 .project-col img{
-    width: 80%;
-    height:70%;
+    width: 90%;
+    height:68%;
     padding-bottom: 10px;
 }
 .project-col h3{
@@ -177,3 +177,54 @@ nav .fa{
         flex-direction: column;
     }
 }
+
+/*-------socials-------*/
+.socials {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+
+.socials .icons .fa{
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.fa-github-square:hover{
+    color: #0FECDE;
+    transition: 0.2s;   
+}
+.fa-linkedin-square:hover{
+    color: #0FECDE;
+    transition: 0.2s;   
+}
+.fa-youtube-square:hover{
+    color: #0FECDE;
+    transition: 0.2s;   
+}
+.fa-instagram:hover{
+    color: #0FECDE;
+    transition: 0.2s;   
+}
+
+/*-------footer-------*/
+
+.footer{
+    min-height: 7vh;
+    width: 100%;
+    padding-top: 20px; 
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Images/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.footer p{
+    margin: auto;
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+} 
